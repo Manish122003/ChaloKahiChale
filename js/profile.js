@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   // Function to redirect to the profile page
   function profilePage() {
-    window.location.href = "profile.html";
+    window.location.href = "new.html";
   }
   
   
@@ -106,26 +106,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   
   
-  window.addEventListener('resize', function() {
-      var btn = document.querySelector('.btn');
-      if (window.innerWidth <= 768) {
-        btn.style.padding = '8px 16px';
-        btn.style.fontSize = '14px';
-      } else {
-        btn.style.padding = '10px 20px';
-        btn.style.fontSize = 'inherit';
-      }
-    });
+  document.addEventListener("DOMContentLoaded", function() {
+    const accordionBtn = document.getElementById("accordionBtn");
+    const accordionContent = document.querySelector(".accordion-content");
+  
+    if (accordionBtn && accordionContent) {
+        accordionBtn.addEventListener("click", function() {
+            accordionContent.classList.toggle("active");
+        });
+    } else {
+        console.error("Accordion button or content not found.");
+    }
+  });
   
     
-  window.dispatchEvent(new Event('resize'));
-  const toggle = document.getElementById('notificationToggle');
-  toggle.addEventListener('change', function () {
-      if (this.checked) {
-        
-          alert('Notifications turned ON');
-      } else {
-          
-          alert('Notifications turned OFF');
-      }
-  });

@@ -10,6 +10,18 @@
   border: 2px solid #ccc;
 }
 
+
+/* Accordion styles */
+.accordion-content {
+  display: none;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-content.active {
+  display: block;
+}
+
 .switch input {
   display: none;
 }
@@ -1171,6 +1183,7 @@ body {
     justify-content: center;
     padding: 9px 60px;
   }
+
   @media (max-width: 991px) {
     .f-75 {
       max-width: 100%;
