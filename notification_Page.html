@@ -39,81 +39,76 @@
       <a href="hotel_list.html">Hotels</a>
       <a href="#">About us</a>
     </div>
-
-      <div class="h-3" style="color: transparent;">
-        <div class="h-10" style="color: transparent; background-color: transparent; height: 0px;">Sign In</div>
-      </div>
     
+
+
+<!-- </header> -->
 <div class="container">
-  <div class="sidebar">
-    <div class="s">
-      <h2 style="text-align: center;">My Profile</h2>
-      <label for="fileInput" style="cursor: pointer;">
-        <img
-          loading="lazy"
-          srcset="https://media.istockphoto.com/id/1495088043/vector/user-profile-icon-avatar-or-person-icon-profile-picture-portrait-symbol-default-portrait.jpg?s=612x612&w=0&k=20&c=dhV2p1JwmloBTOaGAtaA3AW1KSnjsdMt7-U_3EZElZ0="
-          class="img-1"
-          id="profileImage"
-        />
-      </label>
-      <!-- Hidden file input for uploading profile photo -->
-      <input type="file" id="fileInput" style="display: none;">
-      <div class="s-11">Saumya Pande</div>
-      <div class="s-12">
-        <div class="s-13">
-          <img
-            loading="lazy"
-            src="https://www.freeiconspng.com/thumbs/address-icon/address-location-marker-pin-place-point-pointer-icon--icon--0.png"
-            class="img-2"
-          />
-          <div class="s-14">Chennai</div>
-        </div>
-        <div class="s-15"></div>
-        <div class="s-16">
-          <img
-            loading="lazy"
-            src="https://image.pngaaa.com/652/2487652-middle.png"
-            class="img-3"
-          />
-          <div class="s-17">1990-01-18</div>
+<div class="sidebar">
+<div class="s">
+  <h2 style="text-align: center;">My Profile</h2>
+  <label for="fileInput" style="cursor: pointer;">
+    <img
+      loading="lazy"
+      srcset="https://media.istockphoto.com/id/1495088043/vector/user-profile-icon-avatar-or-person-icon-profile-picture-portrait-symbol-default-portrait.jpg?s=612x612&w=0&k=20&c=dhV2p1JwmloBTOaGAtaA3AW1KSnjsdMt7-U_3EZElZ0="
+      class="img-1"
+      id="profileImage"
+    />
+  </label>
+  <!-- Hidden file input for uploading profile photo -->
+  <input type="file" id="fileInput" style="display: none;">
+  <div class="s-11">Saumya Pande</div>
+  <div class="s-12">
+    <div class="s-13">
+      <img
+        loading="lazy"
+        src="https://www.freeiconspng.com/thumbs/address-icon/address-location-marker-pin-place-point-pointer-icon--icon--0.png"
+        class="img-2"
+      />
+      <div class="s-14">Chennai</div>
+    </div>
+    <div class="s-15"></div>
+    <div class="s-16">
+      <img
+        loading="lazy"
+        src="https://image.pngaaa.com/652/2487652-middle.png"
+        class="img-3"
+      />
+      <div class="s-17">1990-01-18</div>
+    </div>
+  </div>
+  <div class="s-19">
+    <button class="s-18 clickable" id="profileButton" onclick="profilePage()">Profile Informations</button>
+    <button class="s-18 clickable" id="newsletterButton" onclick="goToNewsletterPage()">Newsletter Subscription</button>
+    <button class="s-18 clickable" id="notificationsButton" onclick="notificationPage()">Manage notifications</button>
+ </div>
+</div>
+</div>
+<div class="content">
+  <div class="note">
+      <h1>Notification Page</h1>
+      <div class="notification-box">
+        <div class="notification-title">New Notification</div>
+        <div class="notification-content">
+          <p>We are a team of passionate individuals dedicated to providing high-quality products and services to our customers.</p>
+          <p>Our mission is to create innovative solutions that enhance your experience and make your life easier.</p>
+          <p>With years of expertise and a customer-centric approach, we strive to exceed your expectations every step of the way.</p>
+        </div><br>
+        <div class="toggle-btn">
+          <label class="switch">
+              <input type="checkbox" id="notificationToggle">
+              <span class="slider round"></span>
+          </label>
+          <label for="notificationToggle">Turn Notifications On/Off</label>
+      </div>
+        <div class="btn-note">
+          <a href="#" class="btn">View Details</a>
         </div>
       </div>
-      <div class="s-19">
-        <button class="s-18 clickable" id="profileButton" onclick="profilePage()">Profile Informations</button>
-        <button class="s-18 clickable" id="newsletterButton" onclick="goToNewsletterPage()">Newsletter Subscription</button>
-        <button class="s-18 clickable" id="notificationsButton" onclick="notificationPage()">Manage notifications</button>
-     </div>
     </div>
-  </div>
-  
-  <div class="content">
-    <div class="div-22">
-      <div class="div-23">Personal Information</div><br><br>
-      <div class="div-24">Name:</div>
-      <input type="text" class="div-25" id="name" placeholder="Enter Name">
-      <div class="div-26" >Date of Birth:</div>
-        <input type="date" id="dob" class="div-25">
-
-      <div class="div-29">Phone:</div>
-      <input type="number" placeholder="Enter Phone Number" class="div-30">
-      <div class="div-31">Location:</div>
-      <input type="text" id="location" class="div-32" placeholder="Enter Location">
-      <div class="div-33" id="savePersonalButton">Save Personal Info</div>
-    </div>
-    <div class="div-34"></div>
-    <div class="div-35">
-      <div class="div-36">Security</div><br>
-      <div class="div-37">Email Address:</div>
-      <input type="email" class="div-38" placeholder="Enter Email">
-      <div class="div-39">Password:</div>
-      <input type="password" class="div-40" placeholder="Enter Password">
-      <div class="div-41">Confirm Password:</div>
-      <input type="password"  class="div-42" placeholder="Conform Password">
-    
-      <div class="div-43" id="saveSecurityButton">Save Security Info</div>
-    </div>
-  </div>
 </div>
+</div>
+
 <br><br>
 
 <footer>
@@ -237,7 +232,7 @@
   </div>
 </footer>
   
-<script src="js/profile.js"></script>
+
 
 
 </body>

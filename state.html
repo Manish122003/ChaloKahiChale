@@ -12,34 +12,34 @@
 
   <link rel="stylesheet" href="css/footer.css">
   <script src="js/sidenavbar.js"></script>
+  <script src="js/state.js"></script>
 </head>
 
 <body>
   <nav class="navbar">
-    <a href="javascript:void(0)" class="closebutton" onclick="toggleNavsidebar()"
-      style="color: #f1f1f1; text-decoration: none; padding-top: 0.75%;">&#9776;</a>
+    <a href="javascript:void(0)" class="closebutton" onclick="toggleNavsidebar()" style="color: #f1f1f1; text-decoration: none; padding-top: 0.75%;">&#9776;</a>
     <div class="navbar-brand">ChaloKahiChale</div>
     <div class="navbar-links">
-      <div class="navbar-menu">
-        <a href="index.html" class="navbar-item">Home</a>
-        <a href="#" class="navbar-item">About Us</a>
-        <a href="#" class="navbar-item">Popular Destinations</a>
-        <a href="#" class="navbar-item">Our Packages</a>
-        <a href="profile.html" class="navbar-item">profile</a>
-      </div>
-      <a href="signup.html" class="navbar-signin">Sign In</a>
+        <div class="navbar-menu">
+            <a href="" class="navbar-item">Home</a>
+            
+            <a href="#" class="navbar-item">Popular Destinations</a>
+            <a href="profile.html" class="navbar-item">profile</a>
+            <a href="#" class="navbar-item">About Us</a>
+        </div>
+        <a href="signup.html" class="navbar-signin">Sign In</a>
     </div>
-  </nav>
-  <div id="mySidenav" class="sidenav">
+</nav>
+<div id="mySidenav" class="sidenav">
     <a href="index.html">Home</a>
     <a href="profile.html">profile</a>
+    <a href="state.html">State</a>
     <a href="city.html">Cities</a>
     <a href="hotel_list.html">Hotels</a>
-    <a href="#">Contact</a>
+    <a href="#">About us</a>
   </div>
 
-
-  </nav>
+  
   <div class="states-container">
     <div class="state-title">
       <h1>Rajasthan: Embrace the Regal Splendor</h1>
@@ -86,7 +86,7 @@
   <div class="popular-container">
     <div class="title-btn">
       <h2>Nearby Places</h2>
-      <button class="btn">Explore All</button>
+      <button class="btn"><a href="cities.html" style="text-decoration: none; color: black;">Explore All</a></button>
     </div>
     <div class="popular-img-title-container">
       <div class="popular-img-container city-img1" onmouseover="scaleCityCard(this)" onmouseout="resetCityScale(this)">
@@ -132,7 +132,7 @@
   <div class="popular-container">
     <div class="title-btn">
       <h2>Nearby Hotels</h2>
-      <button class="btn">Explore All</button>
+      <button class="btn"><a href="hotel_list.html" style="text-decoration: none; color: black;">Explore All</a></button>
     </div>
     <div class="popular-img-title-container">
       <div class="popular-img-container hotel-img" onmouseover="scaleHotelCard(this)"
@@ -217,6 +217,95 @@
     </div>
 
   </div>
+
+
+<br><br>
+
+
+<div id="testimonial-container">
+  <div id="title-arrow-container">
+      <h1 id="title">Testimonials</h1>
+      <div id="arrow-container">
+          <a href="#" id="left-arrow"><i class="fa-solid fa-angle-left" style="color: #ffffff; "></i></a>
+          <a href="#" id="right-arrow"><i class="fa-solid fa-angle-right" style="color: #ffffff; "></i></a>
+      </div>
+  </div>
+  <div id="testimonial-items">
+      <div class="testimonial">
+          <img class="testimonial-img" src="./Images/Sebastian.png">
+          <div class="name-desc-container">
+              <div class="name-rating">
+                  <div class="name-position">
+                      <p class="testimonial-name">Sebastian</p>
+                      <p class="testimonial-position">Graphic Design</p>
+                  </div>
+                  <div class="rating">
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                      <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  </div>
+              </div>
+              <p class="testimonial-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry.Lorem Ipsum has been the industry's standard dummy text.</p>
+          </div>
+      </div>
+<div class="testimonial">
+  <img class="testimonial-img" src="./Images/Evangeline.png">
+  <div class="name-desc-container">
+      <div class="name-rating">
+          <div class="name-position">
+              <p class="testimonial-name">Evangeline</p>
+              <p class="testimonial-position">Model</p>
+          </div>
+          <div class="rating">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          </div>
+      </div>
+      <p class="testimonial-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.Lorem Ipsum has been the industry's standard dummy text.</p>
+  </div>
+</div>
+<div class="testimonial">
+  <img class="testimonial-img" src="./Images/Alexander.png">
+  <div class="name-desc-container">
+      <div class="name-rating">
+          <div class="name-position">
+              <p class="testimonial-name">Alexander</p>
+              <p class="testimonial-position">Software Engineer</p>
+          </div>
+          <div class="rating">
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+              <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+          </div>
+      </div>
+      <p class="testimonial-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.Lorem Ipsum has been the industry's standard dummy text.</p>
+  </div>
+</div>
+
+</div>
+</div>
+<div id="get-offer-container">
+<img id='offer-img' src="./Images/Special.png">
+<div id="title-input-container">
+<h1 id="offer-title">Get special offers,
+and more from travelworld</h1>
+<div id="input-sharebtn-container">
+<input type="email"  id="offer-input" placeholder="Enter Your Email"><button id="offer-sharebtn">Share</button>
+</div>
+</div>
+</div>
+
+
 
 
 

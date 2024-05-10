@@ -5,10 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/login.css">
-    
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/sidenavbar.css">
+    <script src="js/sidenavbar.js"></script>
    <script src="js/index_2.js"></script>
 </head>
 <body>
+    
+    <nav class="navbar">
+        <a href="javascript:void(0)" class="closebutton" onclick="toggleNavsidebar()" style="color: #f1f1f1; text-decoration: none; padding-top: 0.75%;">&#9776;</a>
+        <div class="navbar-brand">ChaloKahiChale</div>
+        <div class="navbar-links">
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-item">Home</a>
+                
+                <a href="#" class="navbar-item">Popular Destinations</a>
+                <a href="profile.html" class="navbar-item">profile</a>
+                <a href="#" class="navbar-item">About Us</a>
+            </div>
+            <a href="signup.html" class="navbar-signin">Sign In</a>
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="index.html">Home</a>
+        <a href="profile.html">profile</a>
+        <a href="state.html">State</a>
+        <a href="city.html">Cities</a>
+        <a href="hotel_list.html">Hotels</a>
+        <a href="#">About us</a>
+      </div>
+
     <div class="login_blur">
         <div class="login">
             <div class="left_section" style="background-image: url(Images/login_image.png);">
