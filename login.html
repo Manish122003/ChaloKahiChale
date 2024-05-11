@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/event.js"></script>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/sidenavbar.css">
     <script src="js/sidenavbar.js"></script>
-   <script src="js/index_2.js"></script>
 </head>
 <body>
-    
+
     <nav class="navbar">
         <a href="javascript:void(0)" class="closebutton" onclick="toggleNavsidebar()" style="color: #f1f1f1; text-decoration: none; padding-top: 0.75%;">&#9776;</a>
         <div class="navbar-brand">ChaloKahiChale</div>
@@ -19,9 +19,9 @@
             <div class="navbar-menu">
                 <a href="index.html" class="navbar-item">Home</a>
                 
-                <a href="#" class="navbar-item">Popular Destinations</a>
+                <a href="populardestionation.html" class="navbar-item">Popular Destinations</a>
                 <a href="profile.html" class="navbar-item">profile</a>
-                <a href="#" class="navbar-item">About Us</a>
+                <a href="aboutus.html" class="navbar-item">About Us</a>
             </div>
             <a href="signup.html" class="navbar-signin">Sign In</a>
         </div>
@@ -32,12 +32,12 @@
         <a href="state.html">State</a>
         <a href="city.html">Cities</a>
         <a href="hotel_list.html">Hotels</a>
-        <a href="#">About us</a>
+        <a href="aboutus.html">About us</a>
       </div>
 
     <div class="login_blur">
-        <div class="login">
-            <div class="left_section" style="background-image: url(Images/login_image.png);">
+        <div class="login" id="login-container">
+            <div class="left_section">
                 <div class="chalokahichale">
                     <h1 class="chalokahichale_title">ChaloKahiChale</h1>
                     <p class="chalokahichale_description">
@@ -45,9 +45,9 @@
                     </p>
                 </div>
             </div>
-            <div class="rigth_section">
+            <div class="right_section">
                 <div>
-                    <img src="./Images/v1.png" class="img1" alt="..">
+                    <img src="./images/v1.png" class="img1" alt="..">
                 </div>
                 <div class="main_section">
                     <div class="title">
@@ -80,22 +80,22 @@
                             <div class="or-text">OR</div>
                             <div class="register-container">
                                 <div class="social-icons">
-                                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8ded237eef7de5d3c2f98be4bd9dd39aad745fa92411fc34aab674e066aab0d7?apiKey=e17a3e7d1605454cb19f07a5b45affe5&" alt="Social media icon" class="social-icon" />
-                                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a2ff315c29c491d0a4c8c5521e1042f6131dbd5b016681161cfb22a21d333ce2?apiKey=e17a3e7d1605454cb19f07a5b45affe5&" alt="Social media icon" class="social-icon" />
-                                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ccc3c2c806e4ce2c83e40852e1de865ee95577b816d4baa95f00caf06fdc7972?apiKey=e17a3e7d1605454cb19f07a5b45affe5&" alt="Social media icon" class="social-icon" />
+                                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8ded237eef7de5d3c2f98be4bd9dd39aad745fa92411fc34aab674e066aab0d7?apiKey=e17a3e7d1605454cb19f07a5b45affe5&" alt="Social media icon" class="social-icon google" />
+                                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a2ff315c29c491d0a4c8c5521e1042f6131dbd5b016681161cfb22a21d333ce2?apiKey=e17a3e7d1605454cb19f07a5b45affe5&" alt="Social media icon" class="social-icon facebook" />
+                                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ccc3c2c806e4ce2c83e40852e1de865ee95577b816d4baa95f00caf06fdc7972?apiKey=e17a3e7d1605454cb19f07a5b45affe5&" alt="Social media icon" class="social-icon apple" />
                                 </div>
-                                <p class="register-cta">Don't have account?
-                                  <a href="signup.html" class="register-link">Register Now</a>
+                                <p class="register-cta">Don't have an account? 
+                                    <a href="./signup.html" class="register-link">Register Now</a>
                                 </p>
                               </div>
                         </form>
                     </div>
                 </div>
                 <div>
-                    <img src="./Images/v2.png" class="img2" alt="..">
+                    <img src="./images/v2.png" class="img2" alt="..">
                 </div>
                 <div>
-                    <img src="./Images/v3.png" class="img3" alt="..">
+                    <img src="./images/v3.png" class="img3" alt="..">
                 </div>
             </div>
         </div>
