@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   // Function to navigate to the profile page
   function profilePage() {
-    window.location.href = "new.html";
+    window.location.href = "profile.html";
   }
   
 
